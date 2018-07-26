@@ -6,7 +6,8 @@ const PayRateCategories = require('../models/payRateCategories')
 const Entitlements = require('../models/entitlements')
 const StandardHours = require('../models/standardHours')
 
-mongoose.connect('mongodb://localhost/agnes', (err) => {
+mongoose.connect('mongodb://agnesadmin:admin1@ds155461.mlab.com:55461/agnes', (err) => {
+// mongoose.connect('mongodb://localhost/agnes', (err) => {
   if (err) {
     console.log('Error connecting to database', err);
   } else {

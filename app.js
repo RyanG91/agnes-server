@@ -25,7 +25,7 @@ app.use('/clock', require('./routes/clock'))
 
 
 // Mongoose
-mongoose.connect('mongodb://localhost/agnes', (err) => {
+mongoose.connect('mongodb://agnesadmin:admin1@ds155461.mlab.com:55461/agnes', (err) => {
   if (err) {
     console.log('Error connecting to database', err);
   } else {
